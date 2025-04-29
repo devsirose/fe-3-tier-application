@@ -12,7 +12,7 @@ const RegisterPage = () => {
         event.preventDefault();
         try {
             const response = await axios.post(
-                'http://10.0.136.210:8080/api/v1/identity/register',
+                '/api/v1/identity/register',
                 {
                   username: username,
                   password: password

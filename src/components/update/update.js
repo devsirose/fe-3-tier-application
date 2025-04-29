@@ -22,7 +22,7 @@ const UpdatePassword = () => {
 
       // Gọi API để kiểm tra tài khoản
       const response = await axios.get(
-        "http://10.0.136.210:8080/api/v1/identity/user",
+        "/api/v1/identity/user",
         {
           params: {
             username: search
@@ -59,7 +59,7 @@ const UpdatePassword = () => {
     try {
       // Gọi PUT API để cập nhật mật khẩu
       const response = await axios.put(
-        "http://10.0.136.210:8080/api/v1/identity/user",
+        "/api/v1/identity/user",
         {
           username: search,
           password: newPassword
@@ -90,7 +90,7 @@ const UpdatePassword = () => {
 
     try {
       // Gọi DELETE API để xóa tài khoản
-      const response = await axios.delete(`http://10.0.136.210:8080/api/v1/identity/user/${search}`);
+      const response = await axios.delete(`/api/v1/identity/user/${search}`);
 
       console.log("Delete Account Response:", response);
 

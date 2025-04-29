@@ -18,7 +18,7 @@ const LoginPage = () => {
       });
 
       const response = await axios.post(
-        "http://10.0.136.210:8080/api/v1/identity/login",
+        "/api/v1/identity/login",
         {
           username: username,
           password: password,

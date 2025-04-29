@@ -15,7 +15,7 @@ const InforPage = () => {
             }
 
             // Send a request with the username as a query parameter
-            const response = await axios.get('http://10.0.136.210:8080/api/v1/identity/user', {
+            const response = await axios.get('/api/v1/identity/user', {
                 params: {
                     username: search
                 }
